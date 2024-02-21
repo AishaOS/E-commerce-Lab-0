@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AISHA SULAIMAN E-COMMERCE</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="service-selector">
+        <select id="serviceDropdown" onchange="showServiceImage(); toggleServiceOptions();">
+            <option value="">Select a Service</option>
+            <option value="hair">Hair</option>
+            <option value="nails">Nails</option>
+            <option value="lashes">Lashes</option>
+        </select>
+    </div>
+    
+
+    <div id="hairOptions" style="display: none;">
+        <input type="radio" id="cut" name="hairService" value="cut">
+        <label for="cut">Hair Cut</label><br>
+    
+        <input type="radio" id="color" name="hairService" value="color">
+        <label for="color">Hair Color</label><br>
+    
+        <input type="radio" id="style" name="hairService" value="style">
+        <label for="style">Styling</label>
+    </div>
+
+    <div id="nailsOptions" style="display: none;">
+        <input type="radio" id="manicure" name="nailService" value="manicure">
+        <label for="manicure">Manicure</label><br>
+        <input type="radio" id="pedicure" name="nailService" value="pedicure">
+        <label for="pedicure">Pedicure</label><br>
+        <input type="radio" id="polish" name="nailService" value="polish">
+        <label for="polish">Nail Polish</label>
+    </div>
+    
+    <div id="serviceImageDisplay" class="service-image-display">
+    </div>
+    
+
+<script src="service.js"></script>
+</body>
+</html>
